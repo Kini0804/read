@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>C语言</item>
+        <item>Java </item>
+        <item>C#</item>
+        <item>PHP</item>
+        <item>HTML</item>
+        <item>HAHA</item>
+        <item>C语言</item>
+    </string-array>
+    <string-array name="articles">
+        <item>C语言,文梅婕,啊哈哈哈啊哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈哈</item>
+        <item>Java,刘先琴,哇咔咔咔阿卡啊卡卡卡卡啊卡卡卡卡啊卡卡卡卡阿卡咔咔</item>
+        <item>C#,赵航,略略略略略略略略略略略略</item>
+        <item>PHP,刘少冬,啊大叔大叔大撒旦</item>
+        <item>HTML,黄琦珊,是多少的速度公司的公司公司打工</item>
+        <item>HAHA,谢凡,的风格的风格的风格都给对方的风格的风格的风格的风格</item>
+        <item>C语言,文梅婕,啊哈哈哈啊哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈哈</item>
+        <item>Java,刘先琴,哇咔咔咔阿卡啊卡卡卡卡啊卡卡卡卡啊卡卡卡卡阿卡咔咔</item>
+    </string-array>
+    <string-array name="book_type">
+        <item>古典文学</item>
+        <item>外国名著</item>
+        <item>中国文学</item>
+        <item>寓言童话</item>
+        <item>武侠小说</item>
+    </string-array>
+</resources>

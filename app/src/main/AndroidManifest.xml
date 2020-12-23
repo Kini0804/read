@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.read">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pdfread" android:launchMode="singleTask"/>
+        <activity android:name=".fenlei.book_type_list" android:launchMode="singleTask"/>
+        <activity android:name=".setting.setting" android:launchMode="singleTask"/>
+        <activity android:name=".setting.photo" android:launchMode="singleTask"/>
+        <activity android:name=".setting.createbook" android:launchMode="singleTask"/>
+        <activity android:name=".setting.contact" android:launchMode="singleTask"/>
+        <activity android:name=".setting.cancel" android:launchMode="singleTask"/>
+        <activity android:name=".article_read" android:launchMode="singleTask"/>
+        <activity android:name=".fenlei.book_info" android:launchMode="singleTop"/>
+        <activity android:name=".fenlei.AuthorContent" android:launchMode="singleTask"/>
+        <activity android:name=".fenlei.MoreBook" android:launchMode="singleTask"/>
+        <activity android:name=".fenlei.ShuPing" android:launchMode="singleTask"/>
+        <activity android:name=".login.page_login" android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".login.page_rgst" android:launchMode="singleTask"/>
+        <activity android:name=".login.page_rgst2" android:launchMode="singleTask"/>
+        <activity android:name=".login.page_rsetpsw" android:launchMode="singleTask"/>
+        <activity android:name=".login.page_rsetpsw2" android:launchMode="singleTask"/>
+        <activity android:name=".tongyong.book_list" />
+        <activity android:name=".search.search" />
+        <activity android:name=".search.search_result" />
+    </application>
+
+</manifest>

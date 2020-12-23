@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="主页面" />
+
+    <item
+        android:id="@+id/type"
+        android:icon="@drawable/type"
+        android:title="分类" />
+
+    <item
+        android:id="@+id/book"
+        android:icon="@drawable/book"
+        android:title="书架" />
+    <item
+        android:id="@+id/myinfo"
+        android:icon="@drawable/myinfo"
+        android:title="我的信息" />
+
+</menu>

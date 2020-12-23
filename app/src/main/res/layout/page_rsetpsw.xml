@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page_rsetpsw"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/rspsw_iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/rspsw_iv_bk"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/bk_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/rspsw_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily=""
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:text="重置密码"
+        android:textColor="#FAD390"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rspsw_et_tel"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:hint="  输入手机号"
+        android:inputType="phone"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rspsw_tv_name" />
+
+    <EditText
+        android:id="@+id/rspsw_et_code"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input"
+        android:hint=" 输入验证码"
+        android:inputType="number"
+        android:numeric="integer"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/rspsw_et_tel"
+        app:layout_constraintTop_toBottomOf="@+id/rspsw_et_tel" />
+
+    <Button
+        android:id="@+id/rspsw_bt_get"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/lgi_bt_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="获取"
+        android:textColor="#444444"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/rspsw_et_tel"
+        app:layout_constraintTop_toBottomOf="@+id/rspsw_et_tel" />
+
+    <Button
+        android:id="@+id/rspsw_bt_sure"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/lgi_bt_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="确定"
+        android:textColor="#444444"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/rspsw_et_code"
+        app:layout_constraintTop_toBottomOf="@id/rspsw_et_code" />
+
+</android.support.constraint.ConstraintLayout>

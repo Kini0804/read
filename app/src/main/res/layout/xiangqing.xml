@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/jingcai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="428dp"
+                android:layout_marginEnd="310dp"
+                android:layout_marginRight="310dp"
+                android:layout_marginTop="58dp"
+                android:text="精彩书评"
+                android:textColor="#444444"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="428dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="187dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginStart="187dp"
+                android:layout_marginTop="56dp"
+                android:background="@android:color/transparent"
+                android:text="更多"
+                android:textColor="#74B9FF"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.729"
+                app:layout_constraintStart_toEndOf="@+id/jingcai"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="27dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="428dp"
+                android:layout_marginTop="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/more"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.642"
+                app:srcCompat="@drawable/morebutton" />
+
+            <TextView
+                android:id="@+id/uesername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="21dp"
+                android:text="用户名"
+                android:textColor="#999999"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jingcai" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="359dp"
+                android:layout_height="79dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="11dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uesername" />
+
+            <TextView
+                android:id="@+id/uesername2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="317dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="317dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="12dp"
+                android:text="用户名"
+                android:textColor="#999999"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="358dp"
+                android:layout_height="84dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="12dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uesername2" />
+
+            <TextView
+                android:id="@+id/banquan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="317dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="317dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="28dp"
+                android:text="版权信息"
+                android:textColor="#444444"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="21dp"
+                android:text="原作名：bala"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banquan" />
+
+            <TextView
+                android:id="@+id/zishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="317dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="317dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:text="字数：40万字"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/chubannian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:text="出版年：2018-12-01"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zishu" />
+
+            <TextView
+                android:id="@+id/chubanshe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:text="出版社：电子科技大学"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chubannian" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

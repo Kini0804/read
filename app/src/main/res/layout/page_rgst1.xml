@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page_rgst"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/rgst_iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/rgst_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily=""
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:text="灯塔阅读"
+        android:textColor="#FAD390"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rgst_iv_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgst_tv_name"
+        app:srcCompat="@mipmap/logo" />
+
+
+    <EditText
+        android:id="@+id/rgst_et_tel"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:hint="  输入手机号"
+        android:inputType="phone"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgst_iv_logo" />
+
+    <EditText
+        android:id="@+id/rgst_et_code"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input"
+        android:hint=" 输入验证码"
+        android:inputType="number"
+        android:numeric="integer"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/rgst_et_tel"
+        app:layout_constraintTop_toBottomOf="@+id/rgst_et_tel" />
+
+    <Button
+        android:id="@+id/rgst_bt_get"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/lgi_bt_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="获取"
+        android:textColor="#444444"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgst_tv_golog"
+        app:layout_constraintEnd_toEndOf="@+id/rgst_et_tel"
+        app:layout_constraintTop_toBottomOf="@+id/rgst_et_tel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/rgst_bt_rgst"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lgi_bt_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="注册"
+        android:textColor="#444444"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@id/rgst_et_code"
+        app:layout_constraintTop_toBottomOf="@id/rgst_et_code" />
+
+    <TextView
+        android:id="@+id/rgst_tv_golog"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="已有账号？"
+        android:textColor="#bfdfff"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@id/rgst_bt_get"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/rgst_bt_rgst"
+        app:layout_constraintTop_toBottomOf="@id/rgst_bt_get" />
+
+    <TextView
+        android:id="@+id/rgst_tv_hop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="跳过"
+        android:textColor="#bfdfff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
